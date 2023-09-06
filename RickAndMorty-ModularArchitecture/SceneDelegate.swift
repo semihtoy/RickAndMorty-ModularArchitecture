@@ -19,8 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(windowScene: windowScene)
-    let splashStoryboard = UIStoryboard(name: "Splash", bundle: RMScenesBundle.bundle)
-    let splashViewController = splashStoryboard.instantiateViewController(withIdentifier: "SplashViewController") as! SplashViewController
+    guard let splashViewController = UIStoryboard.instantiateViewController(.splash, SplashViewController.self) else {
+      fatalError("Cannot be instantiated")
+    }
     let navigationController = UINavigationController(rootViewController: splashViewController)
     self.window?.rootViewController = navigationController
     self.window?.makeKeyAndVisible()
