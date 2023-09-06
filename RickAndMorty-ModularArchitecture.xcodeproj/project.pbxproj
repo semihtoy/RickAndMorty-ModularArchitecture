@@ -31,6 +31,11 @@
 		B39DBF742AA8EEF300551653 /* RMComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B39DBF732AA8EEF300551653 /* RMComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B39DBF772AA8EEF300551653 /* RMComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39DBF712AA8EEF300551653 /* RMComponents.framework */; };
 		B39DBF782AA8EEF300551653 /* RMComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B39DBF712AA8EEF300551653 /* RMComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B39DBF7E2AA8F03000551653 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF7D2AA8F03000551653 /* BundleExtension.swift */; };
+		B39DBF842AA8F06A00551653 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF832AA8F06A00551653 /* BundleExtension.swift */; };
+		B39DBF862AA8F07500551653 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF852AA8F07500551653 /* BundleExtension.swift */; };
+		B39DBF882AA8F07C00551653 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF872AA8F07C00551653 /* BundleExtension.swift */; };
+		B39DBF8A2AA8F08500551653 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DBF892AA8F08500551653 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +132,11 @@
 		B39DBF632AA8EEBF00551653 /* RMEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMEntities.h; sourceTree = "<group>"; };
 		B39DBF712AA8EEF300551653 /* RMComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39DBF732AA8EEF300551653 /* RMComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMComponents.h; sourceTree = "<group>"; };
+		B39DBF7D2AA8F03000551653 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B39DBF832AA8F06A00551653 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B39DBF852AA8F07500551653 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B39DBF872AA8F07C00551653 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B39DBF892AA8F08500551653 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +268,7 @@
 		B39DBF312AA8EE2800551653 /* RMScenes */ = {
 			isa = PBXGroup;
 			children = (
+				B39DBF7C2AA8EFFB00551653 /* Extensions */,
 				B39DBF322AA8EE2800551653 /* RMScenes.h */,
 			);
 			path = RMScenes;
@@ -266,6 +277,7 @@
 		B39DBF422AA8EE5F00551653 /* RMCore */ = {
 			isa = PBXGroup;
 			children = (
+				B39DBF7F2AA8F04600551653 /* Extensions */,
 				B39DBF432AA8EE5F00551653 /* RMCore.h */,
 			);
 			path = RMCore;
@@ -274,6 +286,7 @@
 		B39DBF522AA8EEA600551653 /* RMNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				B39DBF802AA8F04D00551653 /* Extensions */,
 				B39DBF532AA8EEA600551653 /* RMNetwork.h */,
 			);
 			path = RMNetwork;
@@ -282,6 +295,7 @@
 		B39DBF622AA8EEBF00551653 /* RMEntities */ = {
 			isa = PBXGroup;
 			children = (
+				B39DBF812AA8F05200551653 /* Extensions */,
 				B39DBF632AA8EEBF00551653 /* RMEntities.h */,
 			);
 			path = RMEntities;
@@ -290,9 +304,50 @@
 		B39DBF722AA8EEF300551653 /* RMComponents */ = {
 			isa = PBXGroup;
 			children = (
+				B39DBF822AA8F05800551653 /* Extensions */,
 				B39DBF732AA8EEF300551653 /* RMComponents.h */,
 			);
 			path = RMComponents;
+			sourceTree = "<group>";
+		};
+		B39DBF7C2AA8EFFB00551653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B39DBF7D2AA8F03000551653 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B39DBF7F2AA8F04600551653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B39DBF832AA8F06A00551653 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B39DBF802AA8F04D00551653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B39DBF852AA8F07500551653 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B39DBF812AA8F05200551653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B39DBF872AA8F07C00551653 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B39DBF822AA8F05800551653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B39DBF892AA8F08500551653 /* BundleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,18 +568,23 @@
 					};
 					B39DBF2F2AA8EE2800551653 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					B39DBF402AA8EE5F00551653 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					B39DBF502AA8EEA600551653 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					B39DBF602AA8EEBF00551653 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					B39DBF702AA8EEF300551653 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -647,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF7E2AA8F03000551653 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF842AA8F06A00551653 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +723,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF862AA8F07500551653 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF882AA8F07C00551653 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39DBF8A2AA8F08500551653 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,6 +920,7 @@
 		B39DBF232AA8ECFE00551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,6 +949,7 @@
 		B39DBF242AA8ECFE00551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -987,6 +1054,7 @@
 		B39DBF392AA8EE2800551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1007,6 +1075,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1017,6 +1086,7 @@
 		B39DBF3A2AA8EE2800551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1047,6 +1117,7 @@
 		B39DBF4A2AA8EE5F00551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1067,6 +1138,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1077,6 +1149,7 @@
 		B39DBF4B2AA8EE5F00551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1107,6 +1180,7 @@
 		B39DBF5A2AA8EEA600551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1127,6 +1201,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1137,6 +1212,7 @@
 		B39DBF5B2AA8EEA600551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1167,6 +1243,7 @@
 		B39DBF6A2AA8EEBF00551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1187,6 +1264,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1197,6 +1275,7 @@
 		B39DBF6B2AA8EEBF00551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1227,6 +1306,7 @@
 		B39DBF7A2AA8EEF300551653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1247,6 +1327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1257,6 +1338,7 @@
 		B39DBF7B2AA8EEF300551653 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
