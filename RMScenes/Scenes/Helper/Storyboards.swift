@@ -10,4 +10,5 @@ import Foundation
 public enum Storyboards: String {
   case splash = "Splash"
   case characterList = "CharacterList"
+  case characterDetail = "CharacterDetail"
 }

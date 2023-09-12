@@ -72,6 +72,11 @@ extension CharacterListViewController: UICollectionViewDelegate, UICollectionVie
       characterStatus: character?.status ?? "",
       characterSpecies: character?.species ?? "")
       characterCell.configure(item: item)
+  }
 
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let characterId = "\(characters?[indexPath.row].id ?? 0)"
+    let viewController = CharacterDetailBuilder(characterId: characterId).build()
+    self.navigationController?.pushViewController(viewController, animated: true)
   }
 }

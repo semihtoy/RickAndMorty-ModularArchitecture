@@ -12,7 +12,7 @@ public struct CharacterViewItem {
   public let characterName: String
   public let characterStatus: String
   public let characterSpecies: String
-  
+
   public init(characterImage: String?, characterName: String, characterStatus: String, characterSpecies: String) {
     self.characterImage = characterImage
     self.characterName = characterName

@@ -11,6 +11,7 @@ import Alamofire
 enum CharacterEndPoint: BaseRequest {
   
   case characterList(parameters: [String: Any])
+  case characterDetail(parameters: String)
 
   var characterURL: String {
     return "api/character"
@@ -20,6 +21,8 @@ enum CharacterEndPoint: BaseRequest {
     switch self {
     case .characterList:
       return .get
+    case .characterDetail:
+      return .get
     }
   }
 
@@ -27,6 +30,8 @@ enum CharacterEndPoint: BaseRequest {
     switch self {
     case .characterList:
       return characterURL
+    case .characterDetail(let parameters):
+      return characterURL + "/\(parameters)"
     }
   }
 
@@ -34,6 +39,8 @@ enum CharacterEndPoint: BaseRequest {
     switch self {
     case .characterList(let params):
       return params
+    case .characterDetail:
+      return nil
     }
   }
 
