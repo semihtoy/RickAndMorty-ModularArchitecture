@@ -7,10 +7,12 @@
 
 import Foundation
 import RMNetwork
+import RMEntities
+import Combine
 
 class CharacterListViewModel {
-
   let characterListUseCase: CharacterListUseCase
+  @Published var characterListResponse: CharacterListResponse?
 
   init(characterListUseCase: CharacterListUseCase) {
     self.characterListUseCase = characterListUseCase
@@ -21,11 +23,11 @@ class CharacterListViewModel {
   func getCharacterList(pageCount: Int) {
     var parameters: [String: Any] = [:]
     parameters["page"] = "\(pageCount)"
-    characterListUseCase.getCharacterList(parameters: parameters) { result in
+    characterListUseCase.getCharacterList(parameters: parameters) { [weak self] result in
       switch result {
       case .success(let response):
-        print("response")
-      case .failure(let error):
+        self?.characterListResponse = response
+      case .failure(_):
         print("error")
       }
     }

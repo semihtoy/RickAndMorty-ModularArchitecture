@@ -8,8 +8,8 @@
 import Foundation
 
 public struct Info : Codable {
-  let count : Int?
-  let pages : Int?
-  let next : String?
-  let prev : String?
+  public let count : Int?
+  public let pages : Int?
+  public let next : String?
+  public let prev : String?
 }

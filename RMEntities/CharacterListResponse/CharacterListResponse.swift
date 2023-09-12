@@ -7,8 +7,8 @@
 
 import Foundation
 public struct CharacterListResponse : Codable {
-  let info : Info?
-  let characters : [RMCharacter]?
+  public let info : Info?
+  public let characters : [RMCharacter]?
 
   enum CodingKeys: String, CodingKey {
     case info

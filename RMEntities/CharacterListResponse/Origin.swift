@@ -8,6 +8,6 @@
 import Foundation
 
 public struct Origin : Codable {
-  let name : String?
-  let url : String?
+  public let name : String?
+  public let url : String?
 }
