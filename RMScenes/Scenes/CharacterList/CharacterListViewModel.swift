@@ -11,10 +11,10 @@ import RMEntities
 import Combine
 
 class CharacterListViewModel {
-  let characterListUseCase: CharacterListUseCase
+  let characterListUseCase: CharacterListUseCaseType
   @Published var characterListResponse: CharacterListResponse?
 
-  init(characterListUseCase: CharacterListUseCase) {
+  init(characterListUseCase: CharacterListUseCaseType) {
     self.characterListUseCase = characterListUseCase
 
     getCharacterList(pageCount: 5)

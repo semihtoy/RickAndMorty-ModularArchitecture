@@ -8,7 +8,7 @@
 import Foundation
 import RMEntities
 
-protocol CharacterDetailUseCaseType {
+public protocol CharacterDetailUseCaseType {
   func getCharacterDetail(parameters: String, completion: @escaping((Result<CharacterDetailResponse, Error>)) -> Void)
 }
 

@@ -8,7 +8,7 @@
 import Foundation
 import RMEntities
 
-protocol CharacterListUseCaseType {
+public protocol CharacterListUseCaseType {
   func getCharacterList(parameters: [String: Any], completion: @escaping((Result<CharacterListResponse, Error>)) -> Void)
 }
 
