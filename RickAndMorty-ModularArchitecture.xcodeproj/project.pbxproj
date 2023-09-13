@@ -488,8 +488,8 @@
 		B39DBF8B2AA8F0E800551653 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				B3A22EDA2AB10AF80004ECA0 /* CharacterDetail */,
 				B39DBFC72AA916C400551653 /* Helper */,
+				B3A22EDA2AB10AF80004ECA0 /* CharacterDetail */,
 				B39DBFBC2AA90D3E00551653 /* CharacterList */,
 				B39DBF8C2AA8F0F100551653 /* Splash */,
 			);
